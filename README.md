@@ -30,24 +30,37 @@ parâmetros do controlador e o valor de set point.
         + Ajustar o valor da saída do ventilador no modo manual (0...100%).
 
 <p align="center">
-  <img width="600" height="320" src="keyboard.PNG">
+  <img width="440" height="220" src="keyboard.PNG">
 </p>
 
 
 + ## Funcionamento
 
-  + O sistema se inicializa na tela de supervisório. Nela é possível observar o estado atual do controlador, os valores mínimo e máximo de histerese, o valor atual da temperatura e o setpoint configurado. Ao clicar e segurar o botão P, o sistema entra no modo de configuração. Nesse modo é possível percorrer 3 telas, sendo elas a configuração da porcentagem de histerese, o estado atual da saída para o driver e o setpoint desejado. Para alternar entre as telas, os botões LEFT e RIGHT são utilizados. Para editar alguma configuração de alguma tela, dar um clique simples no botão P e o valor pode ser alterado através das teclas laterais. Para salvar a configuração, clicar no botão P novamente. Para sair do modo de configuração e retornar para a tela supervisória, clicar e segurar novamente no botão P.
-## Running the tests
+  + O sistema se inicializa na tela de monitoramento (tela principal). Nela é possível observar o estado atual do controlador (FAN ON, HEAT ON, DRIVER ON/OFF), o valor atual da temperatura e o setpoint configurado. Ao clicar no botão P, o sistema alterna para a tela de configuração do setpoint, ao pressionar o botão S é possível utilizar os botões UP e DOWN para aumentar ou diminuir, respectivamente, o setpoint, após a configuração é necessário pressionar S de novo para confirmar, podendo então pressionar P novamente para ir para a próxima tela. As telas 3 e 4 configuram o ganho proporcional do controlador de cada um dos atuadores, aquecedor e ventilador, respectivamente. A tela 5 apresenta a opção de Manual Mode, se a opção estiver desligada a tela seguinte será a tela de configuração do status do driver (habilitado ou desabilitado), onde é possível ligá-lo ou desligá-lo, sendo a última tela. Caso o Manual Mode esteja ligado as próximas telas apresentam a configuração manual de aquecimento e resfriamento permitindo ligar um de cada vez e escolher o seu duty cycle, só então é possível ir para a tela de configuração do status do driver.
+  
+  
++ ## Periféricos
 
-Explain how to run the automated tests for this system
+  + **Sensor:** O sensor de temperatura utilizado é o sensor analógico LM35.
+  + **MCU:** O MCU utilizado tanto na simulação quanto na montagem prática foi o ATMega328p (Arduino) e ele é o responsável pelas tarefas de controle e interface  do sistema.
+  + **Driver:** O driver utilizado é o circuito integrado L293D - Quadruple Half-H Drivers.
+  + **Aquecedor:** O aquecimento é realizado com um resistor de 22Ω 1/2W.
+  + **Ventilador:** O ventilador é composto por um motor e uma hélice, o modelo utilizado tem as
+seguintes características:
+       + Alimentação: 12 VDC
+       + Corrente: 130mA
+  + **Heart Beat:** Um LED foi utilizado para informar que o sistema está em execução. O LED
+permanece ligado caso o driver de saída esteja desabilitado. 
 
-### Break down into end to end tests
++ ## Controlador
+  + O controlador utilizado foi do tipo Proporcional, neste controlador o sinal de erro,
+diferença entre o sinal de referência e o sinal de realimentação, é multiplicado pelo ganho
+proporcional (Kp) e aplicado a saída.
 
-Explain what these tests test and why
+<p align="center">
+  <img width="500" height="320" src="block_diagram.PNG">
+</p>
 
-```
-Give an example
-```
 
 ### And coding style tests
 

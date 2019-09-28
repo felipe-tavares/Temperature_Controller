@@ -10,7 +10,7 @@ permanece aceso.
     + #### Diagrama de blocos do sistema:
 
 <p align="center">
-  <img width="500" height="320" src="block_diagram.PNG">
+  <img width="500" height="320" src="diagrams/system_block_diagram.PNG">
 </p>
 
 + ## Interface
@@ -58,7 +58,7 @@ diferença entre o sinal de referência e o sinal de realimentação, é multipl
 proporcional (Kp) e aplicado a saída.
 
 <p align="center">
-  <img width="500" height="320" src="block_diagram.PNG">
+  <img width="500" height="320" src="diagrams/controller_block_diagram.PNG">
 </p>
 
 

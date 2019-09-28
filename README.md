@@ -7,7 +7,7 @@ atual e na temperatura programada. O controlador é do tipo Proporcional e as sa
 (Heart Beat), oscila em 0,5Hz sempre que o sistema estiver energizado e o drive estiver habilitado. Caso driver seja desabilitado o Led
 permanece aceso.
 
-    + Diagrama de blocos do sistema:
+    + #### Diagrama de blocos do sistema:
 
 <p align="center">
   <img width="500" height="320" src="diagrama_de_blocos.PNG">
@@ -29,31 +29,14 @@ parâmetros do controlador e o valor de set point.
         + Ligar/Desligar manualmente o ventilador.
         + Ajustar o valor da saída do ventilador no modo manual (0...100%).
 
-
-
 <p align="center">
   <img width="600" height="320" src="teclado.PNG">
 </p>
 
 
-### Installing
++ ## Funcionamento
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
+  + O sistema se inicializa na tela de supervisório. Nela é possível observar o estado atual do controlador, os valores mínimo e máximo de histerese, o valor atual da temperatura e o setpoint configurado. Ao clicar e segurar o botão P, o sistema entra no modo de configuração. Nesse modo é possível percorrer 3 telas, sendo elas a configuração da porcentagem de histerese, o estado atual da saída para o driver e o setpoint desejado. Para alternar entre as telas, os botões LEFT e RIGHT são utilizados. Para editar alguma configuração de alguma tela, dar um clique simples no botão P e o valor pode ser alterado através das teclas laterais. Para salvar a configuração, clicar no botão P novamente. Para sair do modo de configuração e retornar para a tela supervisória, clicar e segurar novamente no botão P.
 ## Running the tests
 
 Explain how to run the automated tests for this system

@@ -10,7 +10,7 @@ permanece aceso.
     + #### Diagrama de blocos do sistema:
 
 <p align="center">
-  <img width="500" height="320" src="diagrama_de_blocos.PNG">
+  <img width="500" height="320" src="block_diagram.PNG">
 </p>
 
 + ## Interface
@@ -30,7 +30,7 @@ parâmetros do controlador e o valor de set point.
         + Ajustar o valor da saída do ventilador no modo manual (0...100%).
 
 <p align="center">
-  <img width="600" height="320" src="teclado.PNG">
+  <img width="600" height="320" src="keyboard.PNG">
 </p>
 
 

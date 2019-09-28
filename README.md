@@ -1,4 +1,4 @@
-# Controlador de temperatura com controlador proporcional
+# Controle de temperatura com controlador proporcional
 
 + ## Descrição geral do sistema:
 

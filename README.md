@@ -9,10 +9,16 @@ permanece aceso.
 
     + #### Diagrama de blocos do sistema:
 
-<p align="center">
-  <img width="540" height="320" src="diagrams/system_block_diagram.PNG">
-</p>
+      <p align="center">
+        <img width="540" height="320" src="diagrams/system_block_diagram.PNG">
+      </p>
 
+    + #### Diagrama esquemático do sistema:
+    
+    <p align="center">
+     <img width="540" height="320" src="diagrams/schematic_diagram.PNG">
+     </p>
+     
 + ## Interface
 
   + O bloco de interface contém um display LCD 16x2 e 4 botões. O display apresenta a temperatura atual, a temperatura desejada (set-point) e o estado atual

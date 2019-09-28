@@ -85,6 +85,6 @@ proporcional (Kp) e aplicado a saída.
   + **Arquivo .hex:** Ao compilar a aplicação, os arquivos .hex e .elf ficam localizados na pasta Release.
     
 
-+ ## Authors
++ ## Autor
 
-* **Felipe Tavares** - *Initial work* - [fe-tavares](https://github.com/fe-tavares)
+* **Felipe Tavares** - *Primeiro trabalho* - [fe-tavares](https://github.com/fe-tavares)

@@ -2,10 +2,10 @@
 
 + ## Descrição geral do sistema:
 
-  + O sistema de controle de temperatura com controlador proporcional é capaz de resfriar e   aquecer o ambiente baseado na temperatura 
-atual e na temperatura programada. O controlador é do tipo Proporcional e as saídas para o drive do tipo PWM. Um led de vida do sistema 
-(Heart Beat), oscila em 0,5Hz sempre que o sistema estiver energizado e o drive estiver 
-habilitado. Caso driver seja desabilitado o Led permanece aceso.
+  + O sistema de controle de temperatura com controlador proporcional é capaz de resfriar e aquecer o ambiente baseado na temperatura 
+atual e na temperatura programada. O controlador é do tipo Proporcional e as saídas para o drive do tipo PWM. Um led de vida do sistema
+(Heart Beat), oscila em 0,5Hz sempre que o sistema estiver energizado e o drive estiver habilitado. Caso driver seja desabilitado o Led
+permanece aceso.
 
     + Diagrama de blocos do sistema:
 
@@ -13,12 +13,27 @@ habilitado. Caso driver seja desabilitado o Led permanece aceso.
   <img width="500" height="320" src="diagrama_de_blocos.PNG">
 </p>
 
-+ ### Interface
++ ## Interface
 
-  + O bloco de interface contém um display LCD 16x2 e 4 botões. O display
-apresenta a temperatura atual, a temperatura desejada (set-point) e o estado atual
-da saída (aquecendo, resfriando, desabilitado). Os botões são utilizados para alterar o os
-parâmetros do controlador e o valor de set point:
+  + O bloco de interface contém um display LCD 16x2 e 4 botões. O display apresenta a temperatura atual, a temperatura desejada (set-point) e o estado atual
+da saída (aquecendo, resfriando, desabilitado). Os botões são utilizados para alterar os
+parâmetros do controlador e o valor de set point.
+
+      + Os botões do teclado servem para ajustar:
+        + Um novo set-point.
+        + Valor do ganho proporcional do controlador.
+        + Desabilitar o controlador (desligar o driver independente do ajuste de
+        temperatura)
+        + Ligar/Desligar manualmente o aquecedor.
+        + Ajustar o valor da saída do aquecedor no modo manual (0...100%).
+        + Ligar/Desligar manualmente o ventilador.
+        + Ajustar o valor da saída do ventilador no modo manual (0...100%).
+
+
+
+<p align="center">
+  <img width="600" height="320" src="teclado.PNG">
+</p>
 
 
 ### Installing

@@ -2,12 +2,12 @@
 
 + ## Descrição geral do sistema:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  O sistema de controle de temperatura com controlador proporcional é capaz de resfriar e 
+<p> O sistema de controle de temperatura com controlador proporcional é capaz de resfriar e 
 aquecer o ambiente baseado na temperatura atual e na temperatura programada. O controlador é do tipo Proporcional e as saídas para o 
 drive do tipo PWM. Um led de vida do sistema (Heart Beat), oscila em 0,5Hz sempre que o sistema estiver energizado e o drive estiver 
-habilitado. Caso driver seja desabilitado o Led permanece aceso.   
+habilitado. Caso driver seja desabilitado o Led permanece aceso.</p>  
 
-![]
+![diagrama_de_blocos](diagrama_de_blocos.PNG)
 
 ### Prerequisites
 

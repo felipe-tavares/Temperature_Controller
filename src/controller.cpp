@@ -9,8 +9,8 @@
 #include "definitions.h"
 
 float setpoint;
-float gainH = 1;
-float gainF = 1;
+float gainH = 20.0;
+float gainF = 20.0;
 int heat_pwm_manual;
 int heat_pwm_manual_in;
 int heat_state_manual;
@@ -41,7 +41,7 @@ void controller() {
 	if (inh >= 150)
 		inh = 150; //3.3V
 
-	inf = (setpoint - current_temperature) * gainF;
+	inf = (setpoint + current_temperature) * gainF;
 	if (inf >= 255)
 		inh = 255;
 	else if (inf <= 56)

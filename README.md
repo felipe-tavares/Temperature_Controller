@@ -16,7 +16,7 @@ permanece aceso.
     + #### Diagrama esquemático do sistema:
     
     <p align="center">
-     <img width="540" height="320" src="diagrams/schematic_diagram.PNG">
+     <img width="540" height="320" src="diagrams/colorful_schematic_diagram.PNG">
      </p>
      
 + ## Interface
@@ -46,11 +46,16 @@ parâmetros do controlador e o valor de set point.
  HEAT ON, DRIVER ON/OFF), o valor atual da temperatura e o setpoint configurado. Ao clicar no botão P, o sistema alterna para a tela de
  configuração do setpoint, ao pressionar o botão S é possível aumentar ou diminuir o setpoint utilizando os botões UP e DOWN 
 respectivamente, após a configuração é necessário pressionar S de novo para confirmar, podendo então pressionar P novamente para ir para 
-a próxima tela. As telas 3 e 4 configuram o ganho proporcional do controlador de cada um dos atuadores, aquecedor e
-ventilador, respectivamente. A tela 5 apresenta a opção de Manual Mode, se a opção estiver desligada a tela seguinte será a tela de
+a próxima tela. As telas 3 e 4 configuram o ganho proporcional do controlador de cada um dos atuadores, aquecedor e ventilador, 
+respectivamente, os ganhos iniciais ajustados foram 20 para o ventilador e 20 para o aquecedor. A tela 5 apresenta
+a opção de Manual Mode, se a opção estiver desligada a tela seguinte será a tela de
 configuração do status do driver (habilitado ou desabilitado), onde é possível ligá-lo ou desligá-lo, sendo a última tela. Caso o Manual
 Mode esteja ligado as próximas telas apresentam a configuração manual de aquecimento e resfriamento permitindo ligar um de cada vez e 
 escolher o seu duty cycle, só então é possível ir para a tela de configuração do status do driver (última tela).
+
+    <p align="center">
+     <img width="540" height="320" src="diagrams/installation.jpeg">
+     </p>
   
   
 + ## Periféricos

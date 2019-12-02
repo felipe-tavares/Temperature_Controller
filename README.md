@@ -98,4 +98,4 @@ proporcional (Kp) e aplicado a saída.
 
 + ## Autor
 
-* **Felipe Tavares** - *Primeiro trabalho* - [fe-tavares](https://github.com/fe-tavares)
+* **Felipe Tavares** - *Primeiro trabalho* - [felipe-tavares](https://github.com/felipe-tavares)
